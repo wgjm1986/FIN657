@@ -15,9 +15,9 @@
 !requirements.txt
 !syllabus.pdf
 !HW1 - Exponential smoothing/Homework 1.ipynb
-!HW1 - Exponential smoothing/Homework 1 solution.ipynb
-!HW3 - ARMA framework/Homework 3.ipynb
-!HW4 - Volatility models/Homework 4.ipynb
+# !HW1 - Exponential smoothing/Homework 1 solution.ipynb
+# !HW3 - ARMA framework/Homework 3.ipynb
+# !HW4 - Volatility models/Homework 4.ipynb
 !Week 1 - MA smoothing and seasonal decomposition/Preliminary.ipynb
 !Week 1 - MA smoothing and seasonal decomposition/Preliminary.pdf
 !Week 1 - MA smoothing and seasonal decomposition/Moving-average smoothing.ipynb
