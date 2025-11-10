@@ -15,10 +15,10 @@
 !requirements.txt
 !syllabus.pdf
 !HW1 - Exponential smoothing/Homework 1.ipynb
-# !HW1 - Exponential smoothing/Homework 1 solution.ipynb
+!HW1 - Exponential smoothing/Homework 1 solution.ipynb
 !HW2 - AR1 and unit root/Homework 2.ipynb
 # !HW2 - AR1 and unit root/Homework 2 solution.ipynb
-# !HW3 - ARMA framework/Homework 3.ipynb
+!HW3 - ARMA framework/Homework 3.ipynb
 # !HW3 - ARMA framework/Homework 3 solution.ipynb
 # !HW4 - Volatility models/Homework 4.ipynb
 # !HW4 - Volatility models/Homework 4 solution.ipynb
