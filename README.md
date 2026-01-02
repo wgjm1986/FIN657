@@ -135,23 +135,29 @@ This is usually easy to troubleshoot and I can help if needed.
 
 ## 4. Running the Code
 
-Every time you work on this project:
+All our examples are notebooks, which are files that have blocks of code along with text discussion.
+They are viewed through web browsers like a webpage.
+To open, edit, and run one of these files, do the following:
 
-1. Open a terminal
-2. Navigate to the repository directory
-3. Activate the environment:
+(1) Open a terminal
 
-    conda activate FIN657
+(2) Navigate to the repository directory
 
-You can then run scripts or notebooks normally.
+(3) Activate the environment:
 
-Examples:
+    conda activate FIN323
 
-    python some_script.py
-
-or
+(4) Launch jupyter: 
 
     jupyter notebook
+
+(5) Look for the browser window that opens up. If one does not open automatically, find the URL that appears in the output of the above command, and paste it into a browser window.
+
+(6) Navigate to the file that you want and click once to open!
+
+(7) When finished, you can close this file and use the earlier tab to navigate to a different one if desired.
+
+(8) When you are completely done, close all the browser windows that have opened up, go back to the terminal from earlier, kill the notebook server by entering `Ctrl+C`, and exit the terminal window.
 
 ---
 
