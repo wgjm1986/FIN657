@@ -1,0 +1,40 @@
+# --- Deny-all by default ---
+*
+
+# --- keep repo control files visible ---
+!.gitignore
+!README.md
+!LICENSE
+!.github/
+
+# --- whitelist all directories at every depth
+!**/
+
+# --- whitelist public course content ---
+!index.html
+!environment.yml
+!.env.example
+!syllabus.pdf
+# !HW1 - Exponential smoothing/Homework 1.ipynb
+# !HW1 - Exponential smoothing/Homework 1 solution.ipynb
+# !HW2 - AR1 and unit root/Homework 2.ipynb
+# !HW2 - AR1 and unit root/Homework 2 solution.ipynb
+# !HW3 - ARMA framework/Homework 3.ipynb
+# !HW3 - ARMA framework/Homework 3 solution.ipynb
+# !HW4 - Volatility models/Homework 4.ipynb
+# !HW4 - Volatility models/Homework 4 solution.ipynb
+!Week 1 - MA smoothing and seasonal decomposition/Preliminary.ipynb
+!Week 1 - MA smoothing and seasonal decomposition/Preliminary.pdf
+!Week 1 - MA smoothing and seasonal decomposition/Moving-average smoothing.ipynb
+!Week 1 - MA smoothing and seasonal decomposition/Moving-average smoothing.pdf
+!Week 2 - Exponential smoothing/Exponential smoothing.ipynb
+!Week 2 - Exponential smoothing/Exponential smoothing.pdf
+!Week 3 - AR1 processes and unit root processes/AR1 and unit root processes.ipynb
+!Week 3 - AR1 processes and unit root processes/AR1 and unit root processes.pdf
+!Week 4 and 5 - The ARMA framework/ARMA.pdf
+!Week 4 and 5 - The ARMA framework/ARMA part 1 - Simulation and estimation.ipynb
+!Week 4 and 5 - The ARMA framework/ARMA part 2 - Model selection.ipynb
+!Week 4 and 5 - The ARMA framework/ARMA part 3 - Forecasting.ipynb
+!Week 4 and 5 - The ARMA framework/ARMA part 4 - Trends and seasonality.ipynb
+!Week 7 and 8 - GARCH/Volatility modeling.pdf
+!Week 7 and 8 - GARCH/Volatility modeling.ipynb
