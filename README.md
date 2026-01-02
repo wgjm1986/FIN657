@@ -118,17 +118,22 @@ Important rules:
 
 Each student’s `.env` file will be different.
 
----
-
-## 4. How the Code Uses `.env`
-
 The Python code automatically loads variables from `.env` using the `python-dotenv` package.
 
 As long as your `.env` file is present and correctly filled out, you do not need to do anything else.
 
+**Note:** It is possible to store your WRDS password in .env, but you do not need to and I recommend you don't.
+Instead, the wrds library will prompt you for your password the first time you connect,
+then will store it in a secure .pgpass file on your computer for future logins.
+This is better than having you type the password in cleartext into the .env file.
+
+If you are prompted for your WRDS password every time you run the code, 
+it usually means the `.pgpass` file was not created correctly.
+This is usually easy to troubleshoot and I can help if needed.
+
 ---
 
-## 5. Running the Code
+## 4. Running the Code
 
 Every time you work on this project:
 
