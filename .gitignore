@@ -1,19 +1,24 @@
 # --- Deny-all by default ---
 *
 
-# --- keep repo control files visible ---
-!.gitignore
-!README.md
-!LICENSE
-!.github/
-
 # --- whitelist all directories at every depth
 !**/
+# --- but explicitly ignore this folder that is created by Pycharm IDE
+.idea/
 
-# --- whitelist public course content ---
+# --- whitelist repo control files ---
+!/.gitignore
+!/README.md
+!/LICENSE
+!/.github/
+
+# --- whitelist config files ---
 !index.html
 !environment.yml
 !.env.example
+
+# --- whitelist course content, but keep some files commented out until the appropriate point in the semester ---
+!Emory_small.png
 !syllabus.pdf
 # !HW1 - Exponential smoothing/Homework 1.ipynb
 # !HW1 - Exponential smoothing/Homework 1 solution.ipynb

@@ -189,3 +189,18 @@ When asking for help, include:
 
 This will make it much easier to diagnose the issue.
 
+---
+
+## Licensing
+
+This repository contains instructional materials and a small amount of
+supporting software code.
+
+- **Instructional materials**, including Jupyter notebooks (`.ipynb`),
+  written explanations, examples, and course content, are licensed under
+  the Creative Commons Attribution–NonCommercial 4.0 International License.
+- **Standalone software code files** (e.g. `.py` scripts intended for reuse
+  outside the instructional context) are licensed under the MIT License.
+
+See `LICENSE` and `LICENSE-CODE` for details.
+
