@@ -121,7 +121,7 @@ As long as your `.env` file is present and correctly filled out, you should not 
 
 **Note:** It is possible to store your WRDS password in .env, but you do not need to and I recommend you don't.
 Instead, the wrds library will prompt you for your password the first time you connect,
-then will store it in a secure .pgpass file on your computer for future logins.
+then will store it in a secure `.pgpass` file on your computer for future logins.
 This is better than having you type the password in cleartext into the .env file.
 
 If you are prompted for your WRDS password every time you run the code, 
