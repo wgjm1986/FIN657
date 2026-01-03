@@ -59,10 +59,6 @@ Once the environment is created, activate it:
 
     conda activate FIN657
 
-To confirm that the environment is active:
-
-    python --version
-
 Finally, register this Conda environment with Jupyter so that it appears as a selectable
 kernel in notebooks:
 
