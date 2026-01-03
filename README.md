@@ -1,29 +1,28 @@
 # FIN657 Course Repository
 
-This repository contains Python code and notebooks used in **FIN 657**.
+## Overview
+
+This Github repository contains the files used in FIN 657 (Financial Econometrics) at Emory University taught by [William Mann](https://sites.google.com/site/williamgilesmann/).  It is a collection of slides, Python notebooks, and other materials.
 
 To run the code on your own computer, you will need to:
 
 1. Create a Conda environment from `environment.yml`
 2. Create a personal `.env` file with your credentials
 
-Follow the steps below in order. Do **not** skip steps.
+Follow the steps below in order.
 
 ---
 
 ## Prerequisites
 
-You must have **Conda** installed. Either of the following is fine:
-
-- **Miniconda** (recommended): https://docs.conda.io/en/latest/miniconda.html
-- **Anaconda**
+You must have **Conda** installed. There are several different versions of it. The most common are Miniconda or Anaconda, both of which are fine.
 
 You will also need a terminal:
 
 - macOS / Linux: Terminal
 - Windows: Anaconda Prompt or PowerShell
 
-You do **not** need prior experience with Conda.
+However, you do not need much experience with either Conda or terminal commands. Just follow the steps below.
 
 ---
 
@@ -34,9 +33,13 @@ If you know how to use Git:
     git clone https://github.com/wgjm1986/FIN657
     cd FIN657
 
-Otherwise, download the repository as a ZIP file from GitHub and unzip it.
+If you haven't installed or used git before, but want to try, see the [official webpage](https://git-scm.com) for resources to help you get started.
 
-All remaining commands should be run **from inside the repository directory**.
+If you don't want to use git, you can download the repository as a ZIP file from the GitHub website and then unzip it.
+
+(In either case, note that I will be adding materials to the repo as the semester progresses. If you did `git clone` then you can always pull the updates with `git pull`. If you are downloading from the GitHub website then you can navigate there to find the new files, or download the whole repo again.)
+
+All remaining commands below should be run **from inside the repository directory**.
 
 ---
 
@@ -74,7 +77,6 @@ We will discuss in class what this means and why it matters.
 ## 3. Set Up Your Credentials (`.env` file)
 
 This project uses **environment variables** to store credentials such as API keys and usernames.
-These should **not** be hardcoded into the code.
 
 ### Step 3.1: Create your `.env` file
 
@@ -135,9 +137,19 @@ This is usually easy to troubleshoot and I can help if needed.
 
 ## 4. Running the Code
 
-All our examples are notebooks, which are files that have blocks of code along with text discussion.
-They are viewed through web browsers like a webpage.
-To open, edit, and run one of these files, do the following:
+### Background
+
+Once you have set up the Conda environment and your credentials file, you can run any Python code and expect it to match my results.
+For this class, our code examples are contained in notebook files, which require some explanation if you are not familiar.
+
+Notebooks are files that include both blocks of code, results from that code including figures, and blocks of text discussing the code.
+These files are viewed through web browsers like a webpage.
+To use them, you first use the `jupyter notebook` command to start a tiny server running on your own computer that can talk to a web browser and tell it what to display.
+Once that server is running, you can use a web browser to navigate and open Jupyter files.
+
+### Steps to follow
+
+To open, edit, and run a notebook, do the following:
 
 (1) Open a terminal
 
@@ -145,7 +157,7 @@ To open, edit, and run one of these files, do the following:
 
 (3) Activate the environment:
 
-    conda activate FIN323
+    conda activate FIN657
 
 (4) Launch jupyter: 
 
@@ -158,47 +170,6 @@ To open, edit, and run one of these files, do the following:
 (7) When finished, you can close this file and use the earlier tab to navigate to a different one if desired.
 
 (8) When you are completely done, close all the browser windows that have opened up, go back to the terminal from earlier, kill the notebook server by entering `Ctrl+C`, and exit the terminal window.
-
----
-
-## Common Problems
-
-### Conda environment already exists
-
-If you see an error saying the environment already exists, remove it and recreate it:
-
-    conda env remove -n FIN657
-    conda env create -f environment.yml
-
----
-
-### Credentials not found or authentication errors
-
-Check the following:
-
-- `.env` exists (not `.env.example`)
-- Variable names match exactly
-- You restarted Python or Jupyter after editing `.env`
-
----
-
-## What You Should NOT Do
-
-- Do not commit your `.env` file to GitHub
-- Do not hardcode API keys or usernames into notebooks
-- Do not rename environment variables unless you also update the code
-
----
-
-## Getting Help
-
-When asking for help, include:
-
-- The **exact error message**
-- The step you were on
-- Your operating system (Windows / macOS / Linux)
-
-This will make it much easier to diagnose the issue.
 
 ---
 
