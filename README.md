@@ -117,8 +117,7 @@ Important rules:
 Each student’s `.env` file will be different.
 
 The Python code automatically loads variables from `.env` using the `python-dotenv` package.
-
-As long as your `.env` file is present and correctly filled out, you do not need to do anything else.
+As long as your `.env` file is present and correctly filled out, you should not need to personalize the code in any way for it to run properly.
 
 **Note:** It is possible to store your WRDS password in .env, but you do not need to and I recommend you don't.
 Instead, the wrds library will prompt you for your password the first time you connect,
