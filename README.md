@@ -154,7 +154,7 @@ To open, edit, and run a notebook, do the following:
 
 (5) Look for the browser window that opens up. If one does not open automatically, find the URL that appears in the output of the above command, and paste it into a browser window.
 
-(6) Navigate to the file that you want and click once to open!
+(6) Navigate to the file that you want and click once to open.
 
 (7) When finished, you can close this file and use the earlier tab to navigate to a different one if desired.
 
