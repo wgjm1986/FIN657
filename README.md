@@ -168,6 +168,21 @@ To open, edit, and run a notebook, do the following:
 
 ---
 
+## A word about Binder
+
+Binder is a free online environment that lets you launch and run code directly from a GitHub repository like this one.
+It can be useful for previewing how our notebooks are structured and how the code is meant to work once you are set up locally.
+
+However, Binder should be treated as a public and untrusted environment. 
+It does not provide security guarantees appropriate for handling secrets.
+So, as a matter of standard security practice, you should never enter confidential information into Binder, including usernames, passwords, or API keys (and this may even violate terms of service for the databases we use). 
+
+For this reason, any use of Binder with this repository should be limited to code that does not require downloading protected data. 
+Any code that requires credentials should be run locally using a .env file as described above.
+This README does not include instructions on using Binder, to avoid encouraging credential use in an environment that is not designed for it.
+
+---
+
 ## Licensing
 
 This repository contains instructional materials and a small amount of
