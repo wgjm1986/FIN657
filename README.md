@@ -108,13 +108,7 @@ Replace:
 - `YOUR_FRED_API_KEY` with your personal FRED API key
 - `YOUR_WRDS_USERNAME` with your WRDS username
 
-Important rules:
-
-- Do **not** use quotes
-- Do **not** add spaces around `=`
-- Do **not** share your `.env` file
-
-Each student’s `.env` file will be different.
+Do not use quotes or spaces in the above. For example if your FRED key is abc123 and your WRDS username is jdoe, then the two lines in your file should be FRED_API_KEY=abc123 and WRDS_USERNAME=jdoe.
 
 The Python code automatically loads variables from `.env` using the `python-dotenv` package.
 As long as your `.env` file is present and correctly filled out, you should not need to personalize the code in any way for it to run properly.
