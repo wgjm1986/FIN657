@@ -1,43 +1,38 @@
-# FIN657 Course Repository
+# Financial Econometrics (FIN657): Course Repository
+### [William Mann](https://sites.google.com/site/williamgilesmann/), Goizueta Business School, Emory University
 
 ## Overview
 
-This is a README file for the Github repository for the course 
-FIN 657 (Financial Econometrics) at Emory University taught by [William Mann](https://sites.google.com/site/williamgilesmann/).
-(At the moment, it is also the landing page for the course on Github Pages, because I haven't yet built out a proper landing page, but that will change sometime soon.)
+This is a landing page and documentation file for the [course Github repository](https://github.com/wgjm1986/FIN657) that I use when I teach FIN657.
+For information about the course, including topics, schedule, assignments, and grading, please see the [syllabus](https://wgjm1986.github.io/FIN657/syllabus.pdf), or contact me directly.
 
 This repository contains the files used when I teach the course.
 It is a collection of slides, Python notebooks, and other materials.
-Students are required to be able to run this code locally so they can follow the course concepts and complete their homework assignments.
-There are several ways to do this, but this document explains the easiest way, which is to clone the repo locally and set up a Conda environment as specified by the `environment.yml` file included with this repo.
+Students in this course are required to run the code locally so they can follow the course concepts and complete their homework assignments.
+
+There are several ways to get the code running locally.
+The easiest way is to clone the course repo, and set up a Conda environment as specified by the included `environment.yml` file.
+The rest of this document explains the steps behind this.
 
 ---
 
 To run the code on your own computer, you will need to:
 
-1. Create a Conda environment from `environment.yml`
-2. Create a personal `.env` file with your credentials
+1. Clone or download the repo to your own computer.
+2. Create a Conda environment from `environment.yml`.
+3. Create a personal `.env` file with your credentials.
+4. Launch a jupyter notebook server.
 
 Follow the steps below in order.
+Some of these steps will require you enter commands into a terminal window.
+On Mac, this is an app called Terminal.
+On Windows, use Command Prompt or PowerShell.
 
 ---
 
-## Prerequisites
+## 1. Download or clone this repository
 
-You must have **Conda** installed. There are several different versions of it. The most common are Miniconda or Anaconda, both of which are fine.
-
-You will also need a terminal:
-
-- macOS / Linux: Terminal
-- Windows: Anaconda Prompt or PowerShell
-
-However, you do not need much experience with either Conda or terminal commands. Just follow the steps below.
-
----
-
-## 1. Download or Clone This Repository
-
-If you know how to use Git:
+If you know how to use git:
 
     git clone https://github.com/wgjm1986/FIN657
     cd FIN657
@@ -52,11 +47,33 @@ All remaining commands below should be run **from inside the repository director
 
 ---
 
-## 2. Create the Conda Environment
+## 2. Create the Conda environment
 
-This repository includes an `environment.yml` file that specifies all required packages.
+### Background
 
-Create the environment by running:
+Python is a language. To use it, you need to install a program called a Python interpreter. To make it useful, you typically also have to download and install many add-on packages with extra features. When sharing code, it becomes very important to make sure you have the same version of the Python interpreter, and all the same packages and their versions, as the person who wrote the code initially. As you can imagine this can get complicated very quickly. 
+
+One modern solution is, for each project that you work on (like this teaching repo), to have a dedicated "virtual environment" that includes a Python interpreter and the necessary packages for the project to work. When you want to do any work in this project (e.g. run some of the code in the repo), you first "activate" the environment to load the correct interpreter and packages, and then you can be confident that everything will run the same on your end as on mine.
+
+The main point of Conda is to make this process easier. 
+You give it a special kind of file called a `yml` file, which specifies a version of Python you want to use, and all the Python packages you need.
+It then creates an environment matching that description which you can activate whenever you want to work on the project.
+Then, anyone who wants to share code with you can also bundle a `yml` file that describes the environment the code should run in.
+You can use that yml to build an environment, activate it, and run the code from inside.
+
+Conda is especially common for teaching, but there are many other similar tools out there based on the same idea.
+You can think of all this as a very simple example of the idea of "infrastructure as code":
+the codebase includes a description of the system on which it should run, and that system is built around it.
+
+### Steps to follow
+
+Install Conda if you don't already have it.
+Several different versions exist.
+The most common are Miniconda or Anaconda, both of which are fine.
+
+Next, open a terminal and navigate to the repo directory `FIN657`.
+You will see a file there called `environment.yml`.
+Use this file to create your environment by running:
 
     conda env create -f environment.yml
 
@@ -68,24 +85,32 @@ Once the environment is created, activate it:
 
     conda activate FIN657
 
-Finally, register this Conda environment with Jupyter so that it appears as a selectable
-kernel in notebooks:
+Finally, with the conda environment activated, register this environment with Jupyter so that it appears as a selectable kernel in notebooks:
 
     python -m ipykernel install --user --name FIN657 --display-name "FIN657 (conda)"
 
 This step makes it easy to ensure your notebook is using the correct Python environment.
-If you skip it, Jupyter may default to the wrong Python environment.
-We will discuss in class what this means and why it matters.
 
 ---
 
-## 3. Set Up Your Credentials (`.env` file)
+## 3. Set up your credentials (`.env` file)
 
-This project uses **environment variables** to store credentials such as API keys and usernames.
+### Background
 
-### Step 3.1: Create your `.env` file
+The code posted in this repo frequently connects to outside databases, which requires a username and password.
+When writing code for yourself, if you need to do this, you could just write out your username and perhaps even your password as part of the code.
+But when collaborating on code, this is a bad idea for both security reasons (since the code will be sent over the internet) and for practical reasons (collaborators with different credentials will have to change the code before it can work on their end).
 
-You will see a file called:
+Instead, the best approach is to have each collaborator create a "configuration" file to store all information that might be different for them from others.
+The goal is to have all the code look identical outside of this configuration file.
+The file itself will look different for each collaborator, and in fact each collaborator should never share their file with others (to avoid accidentally leaking this confidential information).
+However, to keep everyone on the same page, a standard approach is to include in the repo a template configuration file that everyone can edit to their own details.
+
+The most common convention is that the configuration file is called `.env` (notice the filename begins with a `.` which is a common way of labeling a system or configuration file). The template to help create the file is called `.env.example`. You use this template to create your own `.env` file, and then the code will look for that file when it runs to pull your user-specific information. The steps below explain how to set up your `.env` file correctly.
+
+### Steps to follow
+
+In the repo, you will see a file called:
 
     .env.example
 
@@ -97,15 +122,11 @@ macOS / Linux:
 
     cp .env.example .env
 
-Windows (PowerShell):
+Windows:
 
     copy .env.example .env
 
----
-
-### Step 3.2: Edit `.env`
-
-Open `.env` in a text editor and replace the placeholder values with your own information.
+Next, open `.env` in any text editor, and replace the placeholder values with your own information.
 
 The file looks like this:
 
@@ -117,14 +138,14 @@ Replace:
 - `YOUR_FRED_API_KEY` with your personal FRED API key
 - `YOUR_WRDS_USERNAME` with your WRDS username
 
-Do not use quotes or spaces in the above. For example if your FRED key is abc123 and your WRDS username is jdoe, then the two lines in your file should be FRED_API_KEY=abc123 and WRDS_USERNAME=jdoe.
+Do not use quotes or spaces in the above. For example if your FRED key is abc123 and your WRDS username is jdoe, then the two lines in your file should be `FRED_API_KEY=abc123` and `WRDS_USERNAME=jdoe`.
 
 The Python code automatically loads variables from `.env` using the `python-dotenv` package.
-As long as your `.env` file is present and correctly filled out, you should not need to personalize the code in any way for it to run properly.
+So as long as your `.env` file is present and correctly filled out, you should not need to personalize the code in any way to get it working.
 
 **Note:** It is possible to store your WRDS password in .env, but you do not need to and I recommend you don't.
 Instead, the wrds library will prompt you for your password the first time you connect,
-then will store it in a secure `.pgpass` file on your computer for future logins.
+then will store it in a secure .pgpass file on your computer for future logins.
 This is better than having you type the password in cleartext into the .env file.
 
 If you are prompted for your WRDS password every time you run the code, 
@@ -133,7 +154,7 @@ This is usually easy to troubleshoot and I can help if needed.
 
 ---
 
-## 4. Running the Code
+## 4. Opening and running notebook files
 
 ### Background
 
