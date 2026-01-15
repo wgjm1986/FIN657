@@ -1,4 +1,5 @@
-# Financial Econometrics (FIN657): Course Repository
+# Financial Econometrics
+
 ### [William Mann](https://sites.google.com/site/williamgilesmann/), Goizueta Business School, Emory University
 
 ## Overview
