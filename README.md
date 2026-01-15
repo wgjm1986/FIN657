@@ -16,7 +16,25 @@ The rest of this page explains the steps behind this.
 
 ---
 
-To run the code on your own computer, you will need to:
+To run the code on your own computer, you will first need API access to two databases, FRED and WRDS.
+
+- [FRED](https://fred.stlouisfed.org/): 
+This is a public data source maintained by the Federal Reserve Bank of St Louis.
+It has a wide range of macroeconomic and survey data as well as government bond yields.
+You can browse the page for free and even create interactive figures. 
+(For example, here's a [figure](https://fred.stlouisfed.org/graph/?g=Jf2U) I'll show a few times in class.)
+To pull data over the API, you need to create an account and sign up for a free API key.
+Instructions are located [here](https://fred.stlouisfed.org/docs/api/api_key.html).
+The API key is a string of letters or numbers that you can include in your data request, much like a password.
+The instructions below will explain how to use it.
+- [WRDS](https://wrds.wharton.upenn.edu/): 
+This is not really a database but rather a front end for a large collection of common databases in finance.
+We will use it to download data on prices and returns for many different investments.
+This database is not free to the public, but you can sign up for free access as long as you are enrolled at Emory.
+Contact me if you do not already have your access set up, and I will put you in touch with the person who handles this on campus.
+
+Then you will need to follow these steps:
+
 
 1. Clone or download the repo to your own computer.
 2. Create a Conda environment from `environment.yml`.
