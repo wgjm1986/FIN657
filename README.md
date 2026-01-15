@@ -2,7 +2,16 @@
 
 ## Overview
 
-This Github repository contains the files used in FIN 657 (Financial Econometrics) at Emory University taught by [William Mann](https://sites.google.com/site/williamgilesmann/).  It is a collection of slides, Python notebooks, and other materials.
+This is a README file for the Github repository for the course 
+FIN 657 (Financial Econometrics) at Emory University taught by [William Mann](https://sites.google.com/site/williamgilesmann/).
+(At the moment, it is also the landing page for the course on Github Pages, because I haven't yet built out a proper landing page, but that will change sometime soon.)
+
+This repository contains the files used when I teach the course.
+It is a collection of slides, Python notebooks, and other materials.
+Students are required to be able to run this code locally so they can follow the course concepts and complete their homework assignments.
+There are several ways to do this, but this document explains the easiest way, which is to clone the repo locally and set up a Conda environment as specified by the `environment.yml` file included with this repo.
+
+---
 
 To run the code on your own computer, you will need to:
 
