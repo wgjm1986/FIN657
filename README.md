@@ -12,7 +12,7 @@ Students in this course are required to run the code locally so they can follow 
 
 There are several ways to get the code running locally.
 The easiest way is to clone the course repo, and set up a Conda environment as specified by the included `environment.yml` file.
-The rest of this document explains the steps behind this.
+The rest of this page explains the steps behind this.
 
 ---
 
@@ -205,7 +205,7 @@ including usernames, passwords, or API keys (and this may even violate terms of 
 
 For this reason, any use of Binder with this repository should be limited to code that does not require downloading protected data. 
 Any code that requires credentials should be run locally using a .env file as described above.
-This README does not include instructions on using Binder, to avoid encouraging credential use in an environment that is not designed for it.
+This page does not include instructions on using Binder, to avoid encouraging credential use in an environment that is not designed for it.
 
 ---
 
