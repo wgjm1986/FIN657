@@ -178,7 +178,9 @@ It can be useful for previewing how our notebooks are structured and how the cod
 
 However, Binder should be treated as a public and untrusted environment. 
 It does not provide security guarantees appropriate for handling secrets.
-So, as a matter of standard security practice, you should never enter confidential information into Binder, including usernames, passwords, or API keys (and this may even violate terms of service for the databases we use). 
+So, as a matter of standard security practice, 
+**you should never enter confidential information into Binder**,
+including usernames, passwords, or API keys (and this may even violate terms of service for the databases we use). 
 
 For this reason, any use of Binder with this repository should be limited to code that does not require downloading protected data. 
 Any code that requires credentials should be run locally using a .env file as described above.
