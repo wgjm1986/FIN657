@@ -126,13 +126,7 @@ The most common convention is that the configuration file is called `.env` (noti
 
 ### Steps to follow
 
-In the repo, you will see a file called:
-
-    .env.example
-
-Make a copy of this file and rename it to:
-
-    .env
+In the repo, you will see a file called `.env.example`. Make a copy of this file and rename it to `.env`.
 
 macOS / Linux:
 
