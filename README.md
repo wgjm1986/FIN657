@@ -9,7 +9,7 @@ For information about the course, including topics, schedule, assignments, and g
 
 This repository contains the files used when I teach the course.
 It is a collection of slides, Python notebooks, and other materials.
-Students in this course are required to run the code locally so they can follow the course concepts and complete their homework assignments.
+**Students in this course are required to run this code locally** in order the course concepts and complete their homework assignments.
 
 There are several ways to get the code running locally.
 The easiest way is to clone the course repo, and set up a Conda environment as specified by the included `environment.yml` file.
