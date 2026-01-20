@@ -1,6 +1,6 @@
-# Financial Econometrics
+## [William Mann](https://sites.google.com/site/williamgilesmann/), Goizueta Business School, Emory University
 
-### [William Mann](https://sites.google.com/site/williamgilesmann/), Goizueta Business School, Emory University
+---
 
 ## Overview
 
