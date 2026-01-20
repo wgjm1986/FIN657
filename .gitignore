@@ -6,14 +6,13 @@
 # --- but explicitly ignore this folder that is created by Pycharm IDE
 .idea/
 
-# --- whitelist repo control files ---
+# --- whitelist repo control and config files
 !/.gitignore
 !/README.md
 !/LICENSE
 !/LICENSE-CODE
 !/.github/
-
-# --- whitelist config files ---
+!_config.yml
 !environment.yml
 !.env.example
 
