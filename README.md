@@ -1,11 +1,11 @@
-#### [William Mann](https://sites.google.com/site/williamgilesmann/), Goizueta Business School, Emory University
+#### [William Mann](https://wgmann.github.io), Goizueta Business School, Emory University
 
 ---
 
 ## Overview
 
-This is a landing page and documentation file for the [course Github repository](https://github.com/wgjm1986/FIN657) that I use when I teach FIN657.
-For information about the course, including topics, schedule, assignments, and grading, please see the [syllabus](https://wgjm1986.github.io/FIN657/syllabus.pdf), or contact me directly.
+This is a landing page and documentation file for the [course Github repository](https://github.com/wgmann/FIN657) that I use when I teach FIN657.
+For information about the course, including topics, schedule, assignments, and grading, please see the [syllabus](https://wgmann.github.io/FIN657/syllabus.pdf), or contact me directly.
 
 This repository contains the files used when I teach the course.
 It is a collection of slides, Python notebooks, and other materials.
@@ -53,7 +53,7 @@ On Windows, use Command Prompt or PowerShell.
 
 If you know how to use git:
 
-    git clone https://github.com/wgjm1986/FIN657
+    git clone https://github.com/wgmann/FIN657
     cd FIN657
 
 If you haven't installed or used git before, but want to try, see the [official webpage](https://git-scm.com) for resources to help you get started.
