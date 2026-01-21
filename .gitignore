@@ -9,6 +9,7 @@
 # --- whitelist repo control and config files
 !/.gitignore
 !/README.md
+!/index.md
 !/LICENSE
 !/LICENSE-CODE
 !/.github/
