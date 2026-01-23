@@ -1,5 +1,5 @@
 This repository contains course materials for FIN 657 taught by William Mann at Emory University. 
-See the [main course page](https://wgmann.github.io/FIN657) for more information.
+See the [landing page](https://wgmann.github.io/FIN657) for more information.
 To use this repo:
 
     git clone https://github.com/wgmann/FIN657
