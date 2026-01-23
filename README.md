@@ -13,4 +13,4 @@ To use this repo:
 
     jupyter notebook
 
-...and navigate to any notebook to run it
+...and navigate to any notebook file to run it.

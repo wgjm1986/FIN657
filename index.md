@@ -5,7 +5,8 @@
 ## Overview
 
 This is a landing page and documentation file for the [course Github repository](https://github.com/wgmann/FIN657) that I use when I teach FIN657.
-For information about the course, including topics, schedule, assignments, and grading, please see the [syllabus](https://wgmann.github.io/FIN657/syllabus.pdf), or contact me directly.
+Eventually, it may become the main course page.
+For now, if you're looking for information about the course, including topics, schedule, assignments, and grading, please see the [syllabus](https://wgmann.github.io/FIN657/syllabus.pdf), or contact me directly.
 
 This repository contains the files used when I teach the course.
 It is a collection of slides, Python notebooks, and other materials.
